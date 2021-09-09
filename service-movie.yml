@@ -17,7 +17,8 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
   boot:
     admin:
-      client: http://localhost:9070
+      client: 
+        url: http://localhost:9070
 eureka:
   client:
     serviceUrl: 
