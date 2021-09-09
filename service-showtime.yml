@@ -15,7 +15,18 @@ spring:
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.H2Dialect
+  boot:
+    admin:
+      client: http://localhost:9070
 eureka:
   client:
     serviceUrl: 
       defaultZone: http://localhost:9010/eureka
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        includes: "*"
