@@ -13,18 +13,18 @@ spring:
           enabled: true
         routes:
           - id: service-user
-            uri: lb://service-user
+            uri: http://localhost:9100/users
             predicates:
               - Path=/users/**
           - id: service-movie
-            uri: lb://service-movie
+            uri: http://localhost:9020/movies
             predicates:
               - Path=/movies/**
           - id: service-showtime
-            uri: lb://service-showtime
+            uri: http://localhost:9030/showtimes
             predicates:
               - Path=/showtimes/**
           - id: service-booking
-            uri: lb://service-booking
+            uri: http://localhost:9040/bookings
             predicates:
               - Path=/bookings/**
