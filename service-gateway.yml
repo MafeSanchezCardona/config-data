@@ -11,20 +11,20 @@ spring:
         enabled: true
         locator:
           enabled: true
-        routes:
-          - id: service-user
-            uri: http://localhost:9100/users
-            predicates:
-              - Path=/users/**
-          - id: service-movie
-            uri: http://localhost:9020/movies
-            predicates:
-              - Path=/movies/**
-          - id: service-showtime
-            uri: http://localhost:9030/showtimes
-            predicates:
-              - Path=/showtimes/**
-          - id: service-booking
-            uri: http://localhost:9040/bookings
-            predicates:
-              - Path=/bookings/**
+      routes:
+        - id: service-user
+          uri: http://localhost:9100/users
+          predicates:
+            - Path=/users/**
+        - id: service-movie
+          uri: http://localhost:9020/movies
+          predicates:
+            - Path=/movies/**
+        - id: service-showtime
+          uri: http://localhost:9030/showtimes
+          predicates:
+            - Path=/showtimes/**
+        - id: service-booking
+          uri: http://localhost:9040/bookings
+          predicates:
+            - Path=/bookings/**
