@@ -38,3 +38,12 @@ ribbon:
 service-user:
   ribbon:
     listOfServers: http://localhost:9100
+service-movie:
+  ribbon:
+    listOfServers: http://localhost:9020
+service-showtime:
+  ribbon:
+    listOfServers: http://localhost:9030
+service-booking:
+  ribbon:
+    listOfServers: http://localhost:9040
