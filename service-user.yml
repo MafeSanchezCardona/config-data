@@ -32,3 +32,6 @@ management:
     web:
       exposure:
         includes: "*"
+movie-api:
+  ribbon:
+    listOfServers: http://localhost:9010
