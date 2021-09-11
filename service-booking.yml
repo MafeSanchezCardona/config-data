@@ -35,6 +35,6 @@ management:
 ribbon:
   eureka:
     enabled: false
-service-movie:
+service-booking:
   ribbon:
     listOfServers: http://localhost:9040
