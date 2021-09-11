@@ -32,6 +32,9 @@ management:
     web:
       exposure:
         includes: "*"
-movie-api:
+ribbon:
+  eureka:
+    enabled: false
+service-movie:
   ribbon:
-    listOfServers: http://localhost:9010
+    listOfServers: http://localhost:9100
